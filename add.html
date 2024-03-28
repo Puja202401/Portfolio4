@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>add property</title>
+
+ <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body class="stripped-header  tengage wide">
+
+<div class="zsg-layout-width">
+		<main class="zsg-layout-content zsg-layout-top zsg-layout-bottom">
+			<header class="zsg-content-component zsg-separator">
+
+				<h1 class="zsg-content_collapsed">For Sale By Owner Listing</h1>
+				<div class="zsg-h3">509 San Pedro St, Houston, TX 77013</div>
+				<p class="fsbo-posting-path-header"> Post once and your home will be listed on Zamin_edge, reaching buyers on the largest real estate network on the Web. Plus, home shoppers receive emails about new homes on the market – including yours. </p>
+			</header>
+		<form method="post" action="" name="form" id="form" class="zsg-form">
+	
+<section id="posting-price-field-edit-location-map-section" class="zsg-content-component zsg-separator"><h2 id="posting-price-field-header" class="">
+Set your price</h2>
+<div class="zsg-g">
+	<div id="posting-price-field-grid-block" class="zsg-lg-1-4 zsg-sm-1-1">
+		<div class="zsg-g">
+		  <div class="zsg-lg-1-2 zsg-form-field zsg-sm-1-1">
+			<div class="zsg-input-overlay_left ">
+				<span class="zsg-input-overlay-text_left">Rs.</span>
+				<input name="salePriceField" type="tel" value="" id="forSalePriceField" class="commaFormat"/>
+				<div class="hide zsg-notification-text-error feed-warning-text">This change will get overwritten by the feed.</div>
+		    </div>
+		  </div>
+	    </div>
+   </div>
+</div>
+
+</section class="zsg-layout-width">
+<div class="zsg-layout-width">
+
+
+<div id="edit-location-map-radio" class="zsg-form-field hide">
+	<ul class="zsg-form-group zsg-list_inline">
+		<li>
+			<input id="street-map-view" type="radio" name="toggle-map-type" value="street" checked="checked"/>
+			<label for="street-map-view">Street</label>
+		</li>
+		<li>
+			<input id="aerial-map-view" type="radio" name="toggle-map-type" value="aerial"/>
+			<label for="aerial-map-view">Aerial</label>
+		</li>
+	</ul>
+</div>
+<div id="edit-location-map-buttons" class="hide">
+
+	<ul id="edit-location-map-continue-edit-buttons" class="zsg-button-group">
+		<li class="zsg-content-item">
+			<button id="edit-location-map-continue-button" class="zsg-button_primary zsg-button_fullsize">Yes, it's a correct location
+			</button>
+		</li>
+		<li class="zsg-content-item">
+			<button id="edit-location-map-edit-button" class="zsg-button zsg-button_fullsize">No, let me change it</button>
+		</li></ul><ul id="edit-location-map-save-cancel-buttons" class="hide zsg-button-group">
+			<li class="zsg-content-item"><button id="edit-location-map-save-button" class="zsg-button_primary zsg-button_fullsize">
+				<span class="zsg-icon-circle-check"></span> Save &amp; Continue</button>
+			</li><li class="zsg-content-item">
+				<button id="edit-location-map-cancel-button" class="zsg-button zsg-button_fullsize">
+					<span class="zsg-icon-circle-x"></span> Cancel</button>
+				</li></ul></div></div><div class="form-modules"><section id="add-virtual-tour-content" class="zsg-content-component"><h2>3D Home</h2><div class="zsg-content-item"><p> You can add 3D Homes to this property or edit existing tours by going to <span><a target="_blank" rel="noopener noreferrer" href="/">My 3D Homes</a></span>. </p></div>
+
+<!-- add photos-->					
+</section>
+<section id="offerMarketplaceImageUploader" class="zsg-content-component"><h2>Photos</h2><div id="image-uploader-section">
+	<label for="photos">My Photos</label>
+  <input type="file" style="color:blue;border: 1px solid black; margin:30px,20px,20px,40px;padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;align-self:center;"id="photos" name="photos" multiple>
+</div>
+</section>
+<div class="zsg-g">
+<div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left">
+<div class="zsg-form-field"><label for="virtualTourField">Virtual tour URL</label><input type="text" name="virtualTourField" value="" id="virtualTourField" maxlength="255" placeholder="www.sample.com" class=""/><div class="hide zsg-notification-text-error feed-warning-text">This change will get overwritten by the feed.</div></div></div></div>
+<!-- end photos-->
+
+<!--home fact-->
+
+<section id="homeFactsEditor" name="homeFactsEditor" class="zsg-content-component zsg-separator">
+	<h2>Home facts</h2
+	<div class="hide zsg-notification-text-error editing-listing-warning-text"> Some fields, shown in gray below, may only be updated by the listing agent. </div>
+	<div class="zsg-g">
+		<div class="zsg-lg-1-2 zsg-sm-1-1 posting-home-facts-form-field-spacing posting-grid_left">
+			<div class="zsg-form-field"><label for="residenceTypeDropDown">Home type</label>
+			<select name="enumerationElementSelection" id="residenceTypeDropDown" class="medium-form-el">
+                    <option value="0" selected="selected">Single family</option>
+                    <option value="1">Condo</option>
+                    <option value="2">Townhouse</option>
+                    <option value="3">Multi family</option>
+                    <option value="4">Apartment</option>
+                    <option value="5">Mobile / Manufactured</option>
+                    <option value="6">Coop Unit</option>
+                    <option value="7">Vacant land</option>
+                   <option value="8">Other</option>
+            </select>
+            </div>
+            <div class="zsg-g posting-home-facts-form-field-spacing hide-vacant-land">
+            	<div class="posting-home-facts-form-field-spacing">
+            		<div class="zsg-lg-1-1 zsg-form-field">
+            			<label for="bedrooms">Beds</label>
+            			<input name="fieldValue" type="number" value="0" id="bedrooms" pattern="\d*" class=""/>
+            		</div>
+            		<div class="zsg-lg-1-2 zsg-form-field">
+            			<label for="fullBath">Full baths</label>
+            			<input name="fieldValue_0" type="number" value="0" id="fullBathrooms" pattern="\d*" class=""/>
+            		</div>
+            		<div class="zsg-lg-1-2 zsg-form-field">
+            			<label for="threeQuarterBath">3/4 baths</label>
+            			<input name="fieldValue_1" type="number" value="0" id="threeQuarterBathrooms" pattern="\d*" class=""/>
+            		</div>
+            		<div class="zsg-lg-1-2 zsg-form-field">
+            			<label for="halfBath">1/2 baths</label>
+            			<input name="fieldValue_2" type="number" value="0" id="halfBathrooms" pattern="\d*" class=""/>
+            		</div>
+            		<div class="zsg-lg-1-2 zsg-form-field">
+            			<label for="quarterBath">1/4 baths</label>
+            			<input name="fieldValue_3" type="number" value="0" id="quarterBathrooms" pattern="\d*" class=""/>
+            		</div>
+            	</div>
+            </div>
+            <div class="zsg-form-field hide-vacant-land">
+            	<label for="livingArea">Finished square feet</label>
+            	<input name="fieldValue_4" type="tel" value="" id="livingArea" class=" commaFormat"/></div>
+            	<div class="zsg-form-field">
+            		<label for="lotSize">Lot size</label>
+            		<div class="zsg-g"><div class="zsg-lg-1-2">
+            			<input name="fieldValue_5" type="tel" value="" id="lotSize" class="null commaFormat"/></div>
+            			<div class="zsg-lg-1-2">
+            				<select name="unitTypeSelection" id="unitTypeSelection" class="">
+                                <option value="0" selected="selected">Sq ft</option>
+                                <option value="1">Acres</option>
+</select>
+</div>
+</div>
+</div>
+<div class="zsg-form-field hide-vacant-land">
+	<label for="yearBuilt">Year built</label>
+	<input name="fieldValue_6" type="number" value="" id="yearBuilt" pattern="\d*" class=""/>
+</div>
+<div class="zsg-form-field hide-vacant-land">
+	<label for="remodelYear"> Structural remodel year <a href="#major-remodel-year-tooltip" class="zsg-tooltip-launch zsg-icon-circle-question"></a></label><input name="fieldValue_7" type="number" value="" id="remodelYear" pattern="\d*" class=""/></div></div><div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_right"><div class="zsg-form-field hide-vacant-land"><label for="hoaPrice">HOA dues</label><div class="zsg-input-overlay_left "><span class="zsg-input-overlay-text_left">Rs.
+
+    </span><input name="fieldValue_8" type="tel" value="" id="hoaPrice" class="commaFormat commaFormat"/></div><span class="zsg-fineprint">per month</span></div><div class="zsg-g zsg-content-item posting-home-facts-form-field-spacing hide-vacant-land"><div class="zsg-lg-1-2"><div class="zsg-form-field"><label for="finishedBasementSize">Basement sq. ft.</label><input name="fieldValue_9" type="tel" value="" id="finishedBasementSize" class=" commaFormat"/></div></div><div class="zsg-lg-1-2"><div class="zsg-form-field"><label for="garageSize">Garage sq. ft.</label><input name="fieldValue_10" type="tel" value="" id="garageSize" class=" commaFormat"/></div></div></div><div class="zsg-form-field"><label for="homeDescription">Describe your home</label><textarea name="text" id="homeDescription" class=""></textarea><div class="hide zsg-notification-text-error editing-listing-warning-text">Your listing description can only be changed by the listing agent.</div></div></div></div></section>
+	<!--end Home facts-->
+
+<!--Open house-->
+
+	<section id="openHouseContent" name="openHouseContent" class="zsg-content-component zsg-separator hide-vacant-land"><h2>Open house</h2><div class="zsg-content-item">Open houses may not currently allow for social distancing or comply with public health orders. Please consider alternatives, such as Zamin_edge 3D Home tours, or scheduling a real-time video tour.</div><div id="openHouseContent_toggleArea" class=""><div id="cal1" class="open-house-date zsg-form-field"><div class="zsg-g"><div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left posting-open-house-date"><div class="zsg-form-field"><label>Date</label><input name="dateField" type="date" value="" id="cal1DateField" min="2024-03-26" max="2025-03-26" class="zsg-datepicker"/></div></div><div class="zsg-lg-1-4 zsg-sm-1-2 posting-grid_right posting-open-house-start-time"><div class="zsg-form-field"><label>Start time</label><select name="timeDropDown" id="timeDropDown" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10" selected="selected">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select></div></div><div class="zsg-lg-1-4 zsg-sm-1-2"><div class="zsg-form-field"><label>End time</label><select name="timeDropDown_0" id="timeDropDown_0" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16" selected="selected">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select></div></div></div><a style="" id="cal1Remove" href="#1" class="removeCal">remove</a></div><div class="zsg-content-item"><a style="" id="cal1Add" href="#2" class="addCal">Add another date</a></div><div style="display:none" id="cal2" class="open-house-date zsg-form-field"><div class="zsg-g"><div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left posting-open-house-date"><div class="zsg-form-field"><label>Date</label><input name="dateField_0" type="date" value="" id="cal2DateField" min="2024-03-26" max="2025-03-26" class="zsg-datepicker"/></div></div><div class="zsg-lg-1-4 zsg-sm-1-2 posting-grid_right posting-open-house-start-time"><div class="zsg-form-field"><label>Start time</label><select name="timeDropDown_1" id="timeDropDown_1" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10" selected="selected">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select></div></div><div class="zsg-lg-1-4 zsg-sm-1-2"><div class="zsg-form-field"><label>End time</label><select name="timeDropDown_2" id="timeDropDown_2" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16" selected="selected">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select></div></div></div><a style="" id="cal2Remove" href="#2" class="removeCal">remove</a></div><div class="zsg-content-item"><a style="display:none" id="cal2Add" href="#3" class="addCal">Add another date</a></div><div style="display:none" id="cal3" class="open-house-date zsg-form-field"><div class="zsg-g"><div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left posting-open-house-date"><div class="zsg-form-field"><label>Date</label><input name="dateField_1" type="date" value="" id="cal3DateField" min="2024-03-26" max="2025-03-26" class="zsg-datepicker"/></div></div><div class="zsg-lg-1-4 zsg-sm-1-2 posting-grid_right posting-open-house-start-time"><div class="zsg-form-field"><label>Start time</label><select name="timeDropDown_3" id="timeDropDown_3" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10" selected="selected">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select></div></div><div class="zsg-lg-1-4 zsg-sm-1-2"><div class="zsg-form-field"><label>End time</label><select name="timeDropDown_4" id="timeDropDown_4" class="time-dropdown">
+<option value="0">8:00 AM</option>
+<option value="1">8:30 AM</option>
+<option value="2">9:00 AM</option>
+<option value="3">9:30 AM</option>
+<option value="4">10:00 AM</option>
+<option value="5">10:30 AM</option>
+<option value="6">11:00 AM</option>
+<option value="7">11:30 AM</option>
+<option value="8">12:00 PM</option>
+<option value="9">12:30 PM</option>
+<option value="10">1:00 PM</option>
+<option value="11">1:30 PM</option>
+<option value="12">2:00 PM</option>
+<option value="13">2:30 PM</option>
+<option value="14">3:00 PM</option>
+<option value="15">3:30 PM</option>
+<option value="16" selected="selected">4:00 PM</option>
+<option value="17">4:30 PM</option>
+<option value="18">5:00 PM</option>
+<option value="19">5:30 PM</option>
+<option value="20">6:00 PM</option>
+<option value="21">6:30 PM</option>
+<option value="22">7:00 PM</option>
+<option value="23">7:30 PM</option>
+<option value="24">8:00 PM</option>
+<option value="25">8:30 PM</option>
+</select>
+</div></div></div>
+<a style="" id="cal3Remove" href="#3" class="removeCal">remove</a>
+</div>
+<div style="display:none" id="cal3Add" class="addCal zsg-content-item">
+     No more dates can be added.
+</div>
+</div>
+<div class="hide zsg-notification-text-error feed-warning-text">
+This change will get overwritten by the feed.
+</div>
+</section>
+
+<!--Additional information-->
+
+
+<div class="">
+	<section id="additionalInfoEditor" class="zsg-content-component zsg-separator">
+		<h2>Additional information</h2>
+		<div class="zsg-g">
+			<div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left">
+				<div class="zsg-form-field">
+					<label for="websiteField">Related website</label><input type="text" name="websiteField" value="" id="websiteField" maxlength="255" placeholder="www.sample.com" class=""/>
+					<div class="hide zsg-notification-text-error feed-warning-text">
+					This change will get overwritten by the feed.
+				</div>
+			</div>
+		</div>
+		<div id="posting-additional-information-what-i-love" class="zsg-lg-1-2 posting-grid_right zsg-sm-1-1 hide-vacant-land">
+			<div class="zsg-form-field">
+				<label for="whatYouLoveDescription">
+				What I love about this home
+			</label>
+			<textarea name="text_0" id="whatYouLoveDescription" class="">
+			</textarea>
+			<span class="zsg-fineprint">
+			Say what you love about it and what makes it unique, talk about the neighborhood and lifestyle it provides.
+		     </span>
+		    </div>
+		</div>
+	</div>
+	<div id="posting-additional-information-details" class="hide-vacant-land">
+		<div class="posting-additional-information-details-group_left posting-grid_left zsg-content-component z-moreless">
+			<a class="zsg-h4 zsg-icon-expando-down z-moreless-toggle z-moreless-content hide">
+			Room details
+		    </a>
+		    <div class="z-moreless-content">
+		    	<a class="zsg-h4 zsg-icon-expando-up z-moreless-toggle">Room details</a>
+		    	<div class="zsg-content-component">
+		    		<div class="zsg-form-field zsg-g_gutterless">
+		    			<div class="zsg-h4 posting-multi-select-header">Appliances</div>
+		    			<ul class="zsg-form-group zsg-lg-1-2">
+		    				<li>
+		    					<input name="id81481" data-attribute-id="81" id="id81481" type="checkbox" class="home-fact-attribute" data-name="Dishwasher" data-code="481"></input>
+		    					<label for="id81481">Dishwasher</label>
+		    				</li>
+		    				<li>
+		    					<input name="id81482" data-attribute-id="81" id="id81482" type="checkbox" class="home-fact-attribute" data-name="Dryer" data-code="482"></input><label for="id81482">Dryer</label>
+		    				</li>
+		    				<li>
+		    					<input name="id81483" data-attribute-id="81" id="id81483" type="checkbox" class="home-fact-attribute" data-name="Freezer" data-code="483"></input><label for="id81483">Freezer</label></li><li><input name="id81484" data-attribute-id="81" id="id81484" type="checkbox" class="home-fact-attribute" data-name="Garbage disposal" data-code="484"></input><label for="id81484">Garbage disposal</label></li><li><input name="id81485" data-attribute-id="81" id="id81485" type="checkbox" class="home-fact-attribute" data-name="Microwave" data-code="485"></input><label for="id81485">Microwave</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id81486" data-attribute-id="81" id="id81486" type="checkbox" class="home-fact-attribute" data-name="Range / Oven" data-code="486"></input><label for="id81486">Range / Oven</label></li><li><input name="id81487" data-attribute-id="81" id="id81487" type="checkbox" class="home-fact-attribute" data-name="Refrigerator" data-code="487"></input><label for="id81487">Refrigerator</label></li><li><input name="id81488" data-attribute-id="81" id="id81488" type="checkbox" class="home-fact-attribute" data-name="Trash compactor" data-code="488"></input><label for="id81488">Trash compactor</label></li><li><input name="id81489" data-attribute-id="81" id="id81489" type="checkbox" class="home-fact-attribute" data-name="Washer" data-code="489"></input><label for="id81489">Washer</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-h4 posting-multi-select-header">Basement</div><div class="zsg-form-field zsg-g_gutterless"><ul class="zsg-form-group zsg-lg-1-2"><li><input type="radio" name="RadioGroup" value="0" id="id817"/><label for="id817">Finished</label></li><li><input type="radio" name="RadioGroup" value="1" id="id818"/><label for="id818">Partially finished</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input type="radio" name="RadioGroup" value="2" id="id819"/><label for="id819">Unfinished</label></li><li><input type="radio" name="RadioGroup" value="3" id="id8461"/><label for="id8461">None</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Floor Covering</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id82490" data-attribute-id="82" id="id82490" type="checkbox" class="home-fact-attribute" data-name="Carpet" data-code="490"></input><label for="id82490">Carpet</label></li><li><input name="id82491" data-attribute-id="82" id="id82491" type="checkbox" class="home-fact-attribute" data-name="Concrete" data-code="491"></input><label for="id82491">Concrete</label></li><li><input name="id82492" data-attribute-id="82" id="id82492" type="checkbox" class="home-fact-attribute" data-name="Hardwood" data-code="492"></input><label for="id82492">Hardwood</label></li><li><input name="id82493" data-attribute-id="82" id="id82493" type="checkbox" class="home-fact-attribute" data-name="Laminate" data-code="493"></input><label for="id82493">Laminate</label></li><li><input name="id82494" data-attribute-id="82" id="id82494" type="checkbox" class="home-fact-attribute" data-name="Linoleum / Vinyl" data-code="494"></input><label for="id82494">Linoleum / Vinyl</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id82495" data-attribute-id="82" id="id82495" type="checkbox" class="home-fact-attribute" data-name="Slate" data-code="495"></input><label for="id82495">Slate</label></li><li><input name="id82496" data-attribute-id="82" id="id82496" type="checkbox" class="home-fact-attribute" data-name="Softwood" data-code="496"></input><label for="id82496">Softwood</label></li><li><input name="id82497" data-attribute-id="82" id="id82497" type="checkbox" class="home-fact-attribute" data-name="Tile" data-code="497"></input><label for="id82497">Tile</label></li><li><input name="id82498" data-attribute-id="82" id="id82498" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="498"></input><label for="id82498">Other</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Rooms</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id83499" data-attribute-id="83" id="id83499" type="checkbox" class="home-fact-attribute" data-name="Breakfast nook" data-code="499"></input><label for="id83499">Breakfast nook</label></li><li><input name="id83500" data-attribute-id="83" id="id83500" type="checkbox" class="home-fact-attribute" data-name="Dining room" data-code="500"></input><label for="id83500">Dining room</label></li><li><input name="id83501" data-attribute-id="83" id="id83501" type="checkbox" class="home-fact-attribute" data-name="Family room" data-code="501"></input><label for="id83501">Family room</label></li><li><input name="id83502" data-attribute-id="83" id="id83502" type="checkbox" class="home-fact-attribute" data-name="Laundry room" data-code="502"></input><label for="id83502">Laundry room</label></li><li><input name="id83503" data-attribute-id="83" id="id83503" type="checkbox" class="home-fact-attribute" data-name="Library" data-code="503"></input><label for="id83503">Library</label></li><li><input name="id83504" data-attribute-id="83" id="id83504" type="checkbox" class="home-fact-attribute" data-name="Master bath" data-code="504"></input><label for="id83504">Master bath</label></li><li><input name="id83505" data-attribute-id="83" id="id83505" type="checkbox" class="home-fact-attribute" data-name="Mud room" data-code="505"></input><label for="id83505">Mud room</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id83506" data-attribute-id="83" id="id83506" type="checkbox" class="home-fact-attribute" data-name="Office" data-code="506"></input><label for="id83506">Office</label></li><li><input name="id83507" data-attribute-id="83" id="id83507" type="checkbox" class="home-fact-attribute" data-name="Pantry" data-code="507"></input><label for="id83507">Pantry</label></li><li><input name="id83508" data-attribute-id="83" id="id83508" type="checkbox" class="home-fact-attribute" data-name="Recreation room" data-code="508"></input><label for="id83508">Recreation room</label></li><li><input name="id83509" data-attribute-id="83" id="id83509" type="checkbox" class="home-fact-attribute" data-name="Workshop" data-code="509"></input><label for="id83509">Workshop</label></li><li><input name="id83510" data-attribute-id="83" id="id83510" type="checkbox" class="home-fact-attribute" data-name="Solarium / Atrium" data-code="510"></input><label for="id83510">Solarium / Atrium</label></li><li><input name="id83511" data-attribute-id="83" id="id83511" type="checkbox" class="home-fact-attribute" data-name="Sun room" data-code="511"></input><label for="id83511">Sun room</label></li><li><input name="id83512" data-attribute-id="83" id="id83512" type="checkbox" class="home-fact-attribute" data-name="Walk-in closet" data-code="512"></input><label for="id83512">Walk-in closet</label></li></ul></div></div><div class="zsg-content-component zsg-g_gutterless"><div class="zsg-form-field zsg-lg-1-2 zsg-sm-1-1"><label for="roomCount"> Total rooms <span data-target-id="total-rooms-tooltip" class="zsg-tooltip-launch zsg-icon-circle-question"></span><div id="total-rooms-tooltip" class="zsg-tooltip"><h4>Total Rooms</h4><p>Include bedrooms, bathrooms, kitchen, living/family/dining room(s) and den/office.</p><p>Do not include utility/mud rooms, basements, entries or hallways.</p></div></label><input name="fieldValue_11" type="number" value="" id="roomCount" pattern="\d*" class=""/></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Indoor features</div><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox" id="attic"/><label for="attic">Attic</label></li><li><input type="checkbox" name="checkbox_0" id="cableReady"/><label for="cableReady">Cable ready</label></li><li><input type="checkbox" name="checkbox_1" id="ceilingFan"/><label for="ceilingFan">Ceiling fans</label></li><li><input type="checkbox" name="checkbox_2" id="doublePaneWindows"/><label for="doublePaneWindows">Double pane/storm windows</label></li><li><input type="checkbox" name="checkbox_3" id="fireplace"/><label for="fireplace">Fireplace</label></li><li><input type="checkbox" name="checkbox_4" id="intercom"/><label for="intercom">Intercom system</label></li><li><input type="checkbox" name="checkbox_5" id="jettedTub"/><label for="jettedTub">Jetted tub</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox_6" id="motherInLaw"/><label for="motherInLaw">Mother-in-law apartment</label></li><li><input type="checkbox" name="checkbox_7" id="securitySystem"/><label for="securitySystem">Security system</label></li><li><input type="checkbox" name="checkbox_8" id="skylight"/><label for="skylight">Skylights</label></li><li><input type="checkbox" name="checkbox_9" id="vaultedCeiling"/><label for="vaultedCeiling">Vaulted ceiling</label></li><li><input type="checkbox" name="checkbox_10" id="wetBar"/><label for="wetBar">Wet bar</label></li><li><input type="checkbox" name="checkbox_11" id="wired"/><label for="wired">Wired</label></li></ul></div></div></div></div><div class="posting-additional-information-details-group_right posting-grid_right zsg-content-component z-moreless"><a class="zsg-h4 zsg-icon-expando-down z-moreless-toggle z-moreless-content hide">Utility details</a><div class="z-moreless-content"><a class="zsg-h4 zsg-icon-expando-up z-moreless-toggle">Utility details</a><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Cooling Type</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1822" data-attribute-id="18" id="id1822" type="checkbox" class="home-fact-attribute" data-name="Central" data-code="22"></input><label for="id1822">Central</label></li><li><input name="id1823" data-attribute-id="18" id="id1823" type="checkbox" class="home-fact-attribute" data-name="Evaporative" data-code="23"></input><label for="id1823">Evaporative</label></li><li><input name="id1824" data-attribute-id="18" id="id1824" type="checkbox" class="home-fact-attribute" data-name="Geothermal" data-code="24"></input><label for="id1824">Geothermal</label></li><li><input name="id18260" data-attribute-id="18" id="id18260" type="checkbox" class="home-fact-attribute" data-name="Refrigeration" data-code="260"></input><label for="id18260">Refrigeration</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1826" data-attribute-id="18" id="id1826" type="checkbox" class="home-fact-attribute" data-name="Solar" data-code="26"></input><label for="id1826">Solar</label></li><li><input name="id1827" data-attribute-id="18" id="id1827" type="checkbox" class="home-fact-attribute" data-name="Wall" data-code="27"></input><label for="id1827">Wall</label></li><li><input name="id1825" data-attribute-id="18" id="id1825" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="25"></input><label for="id1825">Other</label></li><li><input name="id18465" data-attribute-id="18" id="id18465" type="checkbox" class="home-fact-attribute" data-name="None" data-code="465"></input><label for="id18465">None</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Heating Type</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1748" data-attribute-id="17" id="id1748" type="checkbox" class="home-fact-attribute" data-name="Baseboard" data-code="48"></input><label for="id1748">Baseboard</label></li><li><input name="id1749" data-attribute-id="17" id="id1749" type="checkbox" class="home-fact-attribute" data-name="Forced air" data-code="49"></input><label for="id1749">Forced air</label></li><li><input name="id17750" data-attribute-id="17" id="id17750" type="checkbox" class="home-fact-attribute" data-name="Geothermal" data-code="750"></input><label for="id17750">Geothermal</label></li><li><input name="id1750" data-attribute-id="17" id="id1750" type="checkbox" class="home-fact-attribute" data-name="Heat pump" data-code="50"></input><label for="id1750">Heat pump</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1752" data-attribute-id="17" id="id1752" type="checkbox" class="home-fact-attribute" data-name="Radiant" data-code="52"></input><label for="id1752">Radiant</label></li><li><input name="id1754" data-attribute-id="17" id="id1754" type="checkbox" class="home-fact-attribute" data-name="Stove" data-code="54"></input><label for="id1754">Stove</label></li><li><input name="id1755" data-attribute-id="17" id="id1755" type="checkbox" class="home-fact-attribute" data-name="Wall" data-code="55"></input><label for="id1755">Wall</label></li><li><input name="id1751" data-attribute-id="17" id="id1751" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="51"></input><label for="id1751">Other</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Heating Fuel</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1639" data-attribute-id="16" id="id1639" type="checkbox" class="home-fact-attribute" data-name="Coal" data-code="39"></input><label for="id1639">Coal</label></li><li><input name="id1640" data-attribute-id="16" id="id1640" type="checkbox" class="home-fact-attribute" data-name="Electric" data-code="40"></input><label for="id1640">Electric</label></li><li><input name="id1641" data-attribute-id="16" id="id1641" type="checkbox" class="home-fact-attribute" data-name="Gas" data-code="41"></input><label for="id1641">Gas</label></li><li><input name="id1643" data-attribute-id="16" id="id1643" type="checkbox" class="home-fact-attribute" data-name="Oil" data-code="43"></input><label for="id1643">Oil</label></li><li><input name="id1645" data-attribute-id="16" id="id1645" type="checkbox" class="home-fact-attribute" data-name="Propane / Butane" data-code="45"></input><label for="id1645">Propane / Butane</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1646" data-attribute-id="16" id="id1646" type="checkbox" class="home-fact-attribute" data-name="Solar" data-code="46"></input><label for="id1646">Solar</label></li><li><input name="id1647" data-attribute-id="16" id="id1647" type="checkbox" class="home-fact-attribute" data-name="Wood / Pellet" data-code="47"></input><label for="id1647">Wood / Pellet</label></li><li><input name="id1644" data-attribute-id="16" id="id1644" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="44"></input><label for="id1644">Other</label></li><li><input name="id16464" data-attribute-id="16" id="id16464" type="checkbox" class="home-fact-attribute" data-name="None" data-code="464"></input><label for="id16464">None</label></li></ul></div></div></div></div><div class="posting-additional-information-details-group_left posting-grid_left zsg-content-component z-moreless"><a class="zsg-h4 zsg-icon-expando-down z-moreless-toggle z-moreless-content hide">Building details</a><div class="z-moreless-content"><a class="zsg-h4 zsg-icon-expando-up z-moreless-toggle">Building details</a><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Building Amenities</div><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox_12" id="assistedLiving"/><label for="assistedLiving">Assisted living community</label></li><li><input type="checkbox" name="checkbox_13" id="basketballCourt"/><label for="basketballCourt">Basketball court</label></li><li><input type="checkbox" name="checkbox_14" id="controlledAccess"/><label for="controlledAccess">Controlled access</label></li><li><input type="checkbox" name="checkbox_15" id="disabledAccess"/><label for="disabledAccess">Disabled access</label></li><li><input type="checkbox" name="checkbox_16" id="doorman"/><label for="doorman">Doorman</label></li><li><input type="checkbox" name="checkbox_17" id="elevator"/><label for="elevator">Elevator</label></li><li><input type="checkbox" name="checkbox_18" id="fitnessCenter"/><label for="fitnessCenter">Fitness center</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox_19" id="gatedEntry"/><label for="gatedEntry">Gated entry</label></li><li><input type="checkbox" name="checkbox_20" id="nearTransportation"/><label for="nearTransportation">Near transportation</label></li><li><input type="checkbox" name="checkbox_21" id="over55Community"/><label for="over55Community">Over 55+ active community</label></li><li><input type="checkbox" name="checkbox_22" id="sportsCourt"/><label for="sportsCourt">Sports court</label></li><li><input type="checkbox" name="checkbox_23" id="storageAvailable"/><label for="storageAvailable">Storage</label></li><li><input type="checkbox" name="checkbox_24" id="tennisCourt"/><label for="tennisCourt">Tennis court</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-h4 posting-multi-select-header">Architectural style</div><div class="zsg-form-field zsg-g_gutterless"><ul class="zsg-form-group zsg-lg-1-2"><li><input type="radio" name="RadioGroup_0" value="0" id="id191"/><label for="id191">Bungalow</label></li><li><input type="radio" name="RadioGroup_0" value="1" id="id192"/><label for="id192">Cape Cod</label></li><li><input type="radio" name="RadioGroup_0" value="2" id="id193"/><label for="id193">Colonial</label></li><li><input type="radio" name="RadioGroup_0" value="3" id="id194"/><label for="id194">Contemporary</label></li><li><input type="radio" name="RadioGroup_0" value="4" id="id195"/><label for="id195">Craftsman</label></li><li><input type="radio" name="RadioGroup_0" value="5" id="id196"/><label for="id196">French</label></li><li><input type="radio" name="RadioGroup_0" value="6" id="id197"/><label for="id197">Georgian</label></li><li><input type="radio" name="RadioGroup_0" value="7" id="id198"/><label for="id198">Loft</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input type="radio" name="RadioGroup_0" value="8" id="id199"/><label for="id199">Modern</label></li><li><input type="radio" name="RadioGroup_0" value="9" id="id1911"/><label for="id1911">Queen Anne / Victorian</label></li><li><input type="radio" name="RadioGroup_0" value="10" id="id1912"/><label for="id1912">Ranch / Rambler</label></li><li><input type="radio" name="RadioGroup_0" value="11" id="id1913"/><label for="id1913">Santa Fe / Pueblo Style</label></li><li><input type="radio" name="RadioGroup_0" value="12" id="id1914"/><label for="id1914">Spanish</label></li><li><input type="radio" name="RadioGroup_0" value="13" id="id1915"/><label for="id1915">Split-level</label></li><li><input type="radio" name="RadioGroup_0" value="14" id="id1916"/><label for="id1916">Tudor</label></li><li><input type="radio" name="RadioGroup_0" value="15" id="id1910"/><label for="id1910">Other</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Exterior</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1228" data-attribute-id="12" id="id1228" type="checkbox" class="home-fact-attribute" data-name="Brick" data-code="28"></input><label for="id1228">Brick</label></li><li><input name="id1229" data-attribute-id="12" id="id1229" type="checkbox" class="home-fact-attribute" data-name="Cement / Concrete" data-code="29"></input><label for="id1229">Cement / Concrete</label></li><li><input name="id1230" data-attribute-id="12" id="id1230" type="checkbox" class="home-fact-attribute" data-name="Composition" data-code="30"></input><label for="id1230">Composition</label></li><li><input name="id1231" data-attribute-id="12" id="id1231" type="checkbox" class="home-fact-attribute" data-name="Metal" data-code="31"></input><label for="id1231">Metal</label></li><li><input name="id1233" data-attribute-id="12" id="id1233" type="checkbox" class="home-fact-attribute" data-name="Shingle" data-code="33"></input><label for="id1233">Shingle</label></li><li><input name="id1234" data-attribute-id="12" id="id1234" type="checkbox" class="home-fact-attribute" data-name="Stone" data-code="34"></input><label for="id1234">Stone</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1235" data-attribute-id="12" id="id1235" type="checkbox" class="home-fact-attribute" data-name="Stucco" data-code="35"></input><label for="id1235">Stucco</label></li><li><input name="id1236" data-attribute-id="12" id="id1236" type="checkbox" class="home-fact-attribute" data-name="Vinyl" data-code="36"></input><label for="id1236">Vinyl</label></li><li><input name="id1237" data-attribute-id="12" id="id1237" type="checkbox" class="home-fact-attribute" data-name="Wood" data-code="37"></input><label for="id1237">Wood</label></li><li><input name="id1238" data-attribute-id="12" id="id1238" type="checkbox" class="home-fact-attribute" data-name="Wood products" data-code="38"></input><label for="id1238">Wood products</label></li><li><input name="id1232" data-attribute-id="12" id="id1232" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="32"></input><label for="id1232">Other</label></li></ul></div></div><div class="zsg-content-component zsg-g_gutterless condoFloorFieldsetClass" id="floor-fieldset"><div class="zsg-form-field zsg-lg-1-2 zsg-sm-1-1"><label for="myCondoFloor">Floor Number</label><input name="fieldValue_12" type="number" value="" id="myCondoFloor" pattern="\d*" class=""/></div></div><div class="zsg-content-component zsg-g_gutterless unitCountFieldsetClass" id="unit-fieldset"><div class="zsg-form-field zsg-lg-1-2 zsg-sm-1-1"><label for="unitCount"># of Units</label><input name="fieldValue_13" type="number" value="" id="unitCount" pattern="\d*" class=""/></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Outdoor Amenities</div><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox_25" id="patio"/><label for="patio">Balcony/patio</label></li><li><input type="checkbox" name="checkbox_26" id="barbecueArea"/><label for="barbecueArea">Barbecue area</label></li><li><input type="checkbox" name="checkbox_27" id="deck"/><label for="deck">Deck</label></li><li><input type="checkbox" name="checkbox_28" id="dock"/><label for="dock">Dock</label></li><li><input type="checkbox" name="checkbox_29" id="fencedYard"/><label for="fencedYard">Fenced yard</label></li><li><input type="checkbox" name="checkbox_30" id="garden"/><label for="garden">Garden</label></li><li><input type="checkbox" name="checkbox_31" id="greenHouse"/><label for="greenHouse">Greenhouse</label></li><li><input type="checkbox" name="checkbox_32" id="hotTubSpa"/><label for="hotTubSpa">Hot tub/spa</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input type="checkbox" name="checkbox_33" id="lawn"/><label for="lawn">Lawn</label></li><li><input type="checkbox" name="checkbox_34" id="pond"/><label for="pond">Pond</label></li><li><input type="checkbox" name="checkbox_35" id="pool"/><label for="pool">Pool</label></li><li><input type="checkbox" name="checkbox_36" id="porch"/><label for="porch">Porch</label></li><li><input type="checkbox" name="checkbox_37" id="rvParking"/><label for="rvParking">RV parking</label></li><li><input type="checkbox" name="checkbox_38" id="sauna"/><label for="sauna">Sauna</label></li><li><input type="checkbox" name="checkbox_39" id="sprinklerSystem"/><label for="sprinklerSystem">Sprinkler system</label></li><li><input type="checkbox" name="checkbox_40" id="waterfront"/><label for="waterfront">Waterfront</label></li></ul></div></div><div class="zsg-content-component zsg-g_gutterless"><div class="zsg-form-field zsg-lg-1-2 zsg-sm-1-1"><label for="floorCount"># of Stories</label><input name="fieldValue_14" type="number" value="" id="floorCount" pattern="\d*" class=""/></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Parking:</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1456" data-attribute-id="14" id="id1456" type="checkbox" class="home-fact-attribute" data-name="Carport" data-code="56"></input><label for="id1456">Carport</label></li><li><input name="id1457" data-attribute-id="14" id="id1457" type="checkbox" class="home-fact-attribute" data-name="Garage - Attached" data-code="57"></input><label for="id1457">Garage - Attached</label></li><li><input name="id1458" data-attribute-id="14" id="id1458" type="checkbox" class="home-fact-attribute" data-name="Garage - Detached" data-code="58"></input><label for="id1458">Garage - Detached</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1460" data-attribute-id="14" id="id1460" type="checkbox" class="home-fact-attribute" data-name="Off-street" data-code="60"></input><label for="id1460">Off-street</label></li><li><input name="id1461" data-attribute-id="14" id="id1461" type="checkbox" class="home-fact-attribute" data-name="On-street" data-code="61"></input><label for="id1461">On-street</label></li><li><input name="id14463" data-attribute-id="14" id="id14463" type="checkbox" class="home-fact-attribute" data-name="None" data-code="463"></input><label for="id14463">None</label></li></ul></div></div><div class="zsg-content-component zsg-g_gutterless"><div class="zsg-form-field zsg-lg-1-2 zsg-sm-1-1"><label for="garageCount"># Parking Spaces</label><input name="fieldValue_15" type="number" value="" id="garageSpaces" pattern="\d*" class=""/></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">Roof</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1168" data-attribute-id="11" id="id1168" type="checkbox" class="home-fact-attribute" data-name="Asphalt" data-code="68"></input><label for="id1168">Asphalt</label></li><li><input name="id1169" data-attribute-id="11" id="id1169" type="checkbox" class="home-fact-attribute" data-name="Built-up" data-code="69"></input><label for="id1169">Built-up</label></li><li><input name="id1170" data-attribute-id="11" id="id1170" type="checkbox" class="home-fact-attribute" data-name="Composition" data-code="70"></input><label for="id1170">Composition</label></li><li><input name="id1171" data-attribute-id="11" id="id1171" type="checkbox" class="home-fact-attribute" data-name="Metal" data-code="71"></input><label for="id1171">Metal</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1173" data-attribute-id="11" id="id1173" type="checkbox" class="home-fact-attribute" data-name="Shake / Shingle" data-code="73"></input><label for="id1173">Shake / Shingle</label></li><li><input name="id1174" data-attribute-id="11" id="id1174" type="checkbox" class="home-fact-attribute" data-name="Slate" data-code="74"></input><label for="id1174">Slate</label></li><li><input name="id1175" data-attribute-id="11" id="id1175" type="checkbox" class="home-fact-attribute" data-name="Tile" data-code="75"></input><label for="id1175">Tile</label></li><li><input name="id1172" data-attribute-id="11" id="id1172" type="checkbox" class="home-fact-attribute" data-name="Other" data-code="72"></input><label for="id1172">Other</label></li></ul></div></div><div class="zsg-content-component"><div class="zsg-form-field zsg-g_gutterless"><div class="zsg-h4 posting-multi-select-header">View</div><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1378" data-attribute-id="13" id="id1378" type="checkbox" class="home-fact-attribute" data-name="City" data-code="78"></input><label for="id1378">City</label></li><li><input name="id1379" data-attribute-id="13" id="id1379" type="checkbox" class="home-fact-attribute" data-name="Mountain" data-code="79"></input><label for="id1379">Mountain</label></li><li><input name="id1380" data-attribute-id="13" id="id1380" type="checkbox" class="home-fact-attribute" data-name="Park" data-code="80"></input><label for="id1380">Park</label></li></ul><ul class="zsg-form-group zsg-lg-1-2"><li><input name="id1381" data-attribute-id="13" id="id1381" type="checkbox" class="home-fact-attribute" data-name="Territorial" data-code="81"></input><label for="id1381">Territorial</label></li><li><input name="id1382" data-attribute-id="13" id="id1382" type="checkbox" class="home-fact-attribute" data-name="Water" data-code="82"></input><label for="id1382">Water</label></li><li><input name="id13462" data-attribute-id="13" id="id13462" type="checkbox" class="home-fact-attribute" data-name="None" data-code="462"></input><label for="id13462">None</label></li></ul></div></div></div></div></div></section></div><section id="contact" name="contact" class="zsg-content-component zsg-separator">
+	<h2>Contact information</h2><div class="zsg-g zsg-content-component">
+		<p class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left"> Potential buyers will contact you through the email address you use to register on Zamin_Edge. You must also add your phone number to the listing here. </p>
+		</div>
+		<div class="zsg-g"><div class="zsg-lg-1-2 zsg-sm-1-1 posting-grid_left zsg-content-component">
+			<div class="zsg-form-field"><label for="fullPhoneNumber">Phone number</label><input name="fullPhoneNumber" type="tel" value="" id="fullPhoneNumber" size="20" maxlength="20" placeholder="(555) 555-5555 x5555" class="phoneNumberFormat"/>
+				</div>
+				</div>
+				</div>
+				<div class="zsg-form-actions"><button type="submit" id="LoginRequiredSubmit" title="Submit" class="zsg-button_primary">Post for sale by owner</button></div><div class="zsg-notification-bar_error cannot-post-message hide"> Please wait for your photos to finish processing. </div>
+
+
+
+					</form>
+
+					<div class="zsg-lightbox-content" id="photo-caption-lightbox"><div class="zsg-h2 zsg-content-component">Edit Image</div><div class="photo-caption-lightbox-image-container zsg-content-item"><img class="photo-caption-lightbox-image"></img></div><div class="photo-caption-lightbox-controls zsg-form zsg-content-item"><div class="zsg-form-field"><input type="text" class="caption" placeholder="Add a caption" maxlength="28"/></div><div class="zsg-form-field"><input id="main-photo-checkbox" type="checkbox"/><label for="main-photo-checkbox">Main Photo</label><a class="photo-caption-lightbox-rotate-button">Rotate</a></div><ul class="zsg-button-group"><li><button class="photo-caption-lightbox-remove-button zsg-button">Remove photo</button></li><li><button class="photo-caption-lightbox-save-button zsg-button_primary">Save</button></li></ul></div></div></main></div>
+					
+
+
+
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</form>
+</main>
+</div>
+</body>
+</html>
